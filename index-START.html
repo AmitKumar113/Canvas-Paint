@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+
+<style>
+  html, body {
+    margin: 0;
+    /* width: 96vw;
+    height: 96vh; */
+  }
+
+  .container{
+    border: 2px solid black ;
+    display: flex;
+  }
+
+  .colors{
+    flex: 2;
+    display :flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
+
+  .color{
+    margin: 10px;
+    flex: 1;
+    height: 40px;
+    min-width: 40px;
+    max-width: 45px;
+    flex-wrap: wrap ;
+    border-radius: 50px;
+    border: 2px solid black ;
+    box-shadow: 2px 3px;
+  }
+
+  .bars{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 30px;
+  }
+  
+  .features{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+  }
+
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  #widthBar{
+    color: tomato;
+    height: 5px;
+    /* width: 200px; */
+    background-color: tomato;
+  }
+</style>
+<div class="container">
+  <div class="features">                            <!--more features-->
+    <!-- <div  class="box"></div> -->
+    <div class="box marker">
+      <img src="E:\code\web development\source\highlighter.png" width="30px" height="30px">
+    </div>
+    <div class="box pencil">
+      <img src="E:\code\web development\source\pencil2.png" width="20px" height="20px">
+    </div>
+  <div class="box eraser">
+    <img src="E:\code\web development\source\eraser.png" width="30px" height="30px">
+  </div>
+  <div class="box clear">
+    <img src="E:\code\web development\source\newPage.png" width="30px" height="30px">
+  </div>
+  
+  <!-- <div  class="box"></div>
+    <div class="box"></div>
+  <div  class="box"></div> -->
+  
+</div>
+<div class="colors">                                <!--colors div-->
+  <div  id="clr1"class="color color1"></div>
+  <div class="color color2"></div>
+  <div class="color color3"></div>
+  <div  class="color color4"></div>
+  <div  class="color color5"></div>
+  <div  class="color color6"></div>
+  <div  class="color color7"></div>
+  <div  class="color color8"></div>
+  <div  class="color color9"></div>
+  <div  class="color color10"></div>
+  <div  class="color color11"></div>
+  <div class="color color12"></div>
+  <div class="color color13"></div>
+  <div  class="color color14"></div>
+  <div  class="color color15"></div>
+  <div  class="color color16"></div>
+  <div  class="color color17"></div>
+  <div  class="color color18"></div>
+  <div  class="color color19"></div>
+  <div  class="color color20"></div>
+  </div>
+  <div class="bars">                                 <!--bars  div-->     
+    <div>
+    <span>set radius :    </span>
+  <input id="widthBar" type="range" min="1" max="250" value="30"></input>
+</div>
+  </div>
+</div>
+
+<script src="canvas.js"></script>
+</body>
+</html>
